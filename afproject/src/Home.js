@@ -8,11 +8,13 @@ import Avatar from './resources/Avatar.png'
 import './Slideshow.scss'
 import Header from './Header'
 import Footer from './Footer'
+import Navigator from './Navigator'
 class Home extends Component {
   render() {
     return (
         <div>
           <Header/>
+          <Navigator/>
           <Slide />
             <h1> Courses</h1>
             <Card />
