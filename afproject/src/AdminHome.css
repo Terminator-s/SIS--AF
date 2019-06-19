@@ -36,11 +36,11 @@ i{
 
 
 .header img{
-    width:500px;
+    width:600px;
     height:400px;
     margin-left: 150px;
-    margin-bottom: -95px;
-    margin-top: -95px;
+    /*margin-bottom: -95px;*/
+    /*margin-top: -95px;*/
 }
 
 .nav-link{
@@ -53,12 +53,11 @@ i{
 
 .nav{
     float:right;
-    margin-top: 140px;
     margin-right: 200px;
-
 }
 .nav-item{
     margin-right: 40px;
+    font-size: 60px;
 }
 .column {
     float: left;
@@ -123,10 +122,13 @@ i{
 }
 .footer{
     background-color:#08387f;
-    margin-top:90px;
+    margin-top:20%;
     height:400px;
+
 }
 .footer p{
     color:white;
     font-size: 20px;
+    padding-left: 10%;
+    padding-top: 50px;
 }
