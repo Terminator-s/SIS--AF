@@ -1,0 +1,28 @@
+.cardDiv{
+    width: 1100px;
+    margin-left: 100px;
+    height: auto;
+}
+
+.cardHeader{
+    margin-top: 5px;
+}
+
+.CreateFrom{
+    width: 600px;
+    margin-left: 200px;
+}
+
+.EditFrom{
+    width: 700px;
+    height: auto;
+}
+
+.editComponent{
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+
+
+
