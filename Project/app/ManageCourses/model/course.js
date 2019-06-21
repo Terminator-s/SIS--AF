@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Instructor = require('./instructor');
+const Instructor = require('../../ManageInstructors/model/instructor');
 //const soft_delete = require('mongoose-delete');
 
 const courseSchema= mongoose.Schema({
