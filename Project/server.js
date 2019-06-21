@@ -18,6 +18,7 @@ mongoose.connect('mongodb+srv://terminator:admin123@clusterterminators-rjtl2.azu
 app.use('/courses', require('./app/ManageCourses/routes/courseRouter'));
 app.use('/semester',require('./app/ManageCourses/routes/semesterRouter'));
 app.use('/degree',require('./app/ManageCourses/routes/degreeRouter'));
+app.use('/instructor',require('./app/ManageInstructors/routes/instructorRouter'));
 
 app.use(bundler.middleware());
 
