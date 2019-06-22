@@ -3,8 +3,8 @@ const router = express.Router();
 const instructorController = require('../controller/instructorController');
 
 router.get('/:code', (req, res) => {
-    instructorController.getByCode(req.params.code).then((instructor) => {
-        res.status(instructor.status).send(instructor.instructors)
+    instructorController.getByCode(req.params.code).then((instructors) => {
+        res.status(instructors.status).send(instructors.instructors)
     }).catch(err => {
         res.status(err.status).send({message:err.message})
     })

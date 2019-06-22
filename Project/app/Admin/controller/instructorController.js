@@ -9,8 +9,11 @@ const InstructorController = function () {
                 name: instructor.name,
                 username: instructor.username,
                 password: instructor.password,
-                designation: instructor.designation,
-                faculty: instructor.faculty
+                degree: instructor.degree,
+                courses: instructor.courses,
+                email:instructor.email,
+                address:instructor.address,
+                phone:instructor.phone
 
             });
 
@@ -24,8 +27,8 @@ const InstructorController = function () {
 
     this.getByCode = (code) => {
         return new Promise((resolve, reject) => {
-            Instructor.find({code: code}).exec().then((instructor) => {
-                resolve({status: 200, instructors: instructor})
+            Instructor.find({code: code}).exec().then((instructors) => {
+                resolve({status: 200, instructors: instructors})
             }).catch(err => {
                 reject({status: 404, message: "Error: " + err})
             })
@@ -34,8 +37,8 @@ const InstructorController = function () {
 
     this.getAll = () => {
         return new Promise((resolve, reject) => {
-            Instructor.find().exec().then((instructor) => {
-                resolve({status: 200, instructors: instructor})
+            Instructor.find().exec().then((instructors) => {
+                resolve({status: 200, instructors: instructors})
             }).catch(err => {
                 reject({status: 404, message: "Error: " + err})
             })
