@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ASSHome from './Assignments/Student/sEditAssesments';
+import ASSHome from './Assignments/Student/sViewAssesments';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

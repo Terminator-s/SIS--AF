@@ -106,44 +106,10 @@ class StudentViewAssignment extends Component {
                     </Card>
                 </div>
                 <br/><br/>
-                <Slide />
                 <Footer/>
             </div>
         );
     }
 }
-class Slide extends Component{
-    render(){
-        return(
 
-            <div className="wrapper">
-                <div className="slideshows">
-                    <div className="slideshow slideshow--hero">
-                        <div className="slides">
-                            <div className="slide slide1"></div>
-                            <div className="slide slide2"></div>
-                            <div className="slide slide3"></div>
-                        </div>
-                    </div>
-                    <div className="slideshow slideshow--contrast slideshow--contrast--before">
-                        <div className="slides">
-                            <div className="slide slide1"></div>
-                            <div className="slide slide2"></div>
-                            <div className="slide slide3"></div>
-                        </div>
-                    </div>
-                    <div className="slideshow slideshow--contrast slideshow--contrast--after">
-                        <div className="slides">
-                            <div className="slide slide1"></div>
-                            <div className="slide slide2"></div>
-                            <div className="slide slide3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        )
-    }
-
-}
 export default StudentViewAssignment;
