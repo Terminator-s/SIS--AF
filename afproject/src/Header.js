@@ -26,7 +26,9 @@ class HeaderBar extends Component{
                         <i className="fa fa-youtube"></i>
                         <i className="fa fa-instagram"></i>
                         <i className="fa fa-google-plus"></i>
-                        <i className="fa fa-linkedin"></i></div> </p></b>
+                        <i className="fa fa-linkedin"></i>
+                    </div>
+                </p></b>
             </div>
 
         )

@@ -24,16 +24,10 @@ h1{
 }
 .header-bar-right{
     float:right;
-    margin-right:200px;
-    margin-top:-4px;
 }
 i{
     margin-left: 15px;
 }
-.header-bar p{
-    margin-left:200px;
-}
-
 
 .header img{
     width:500px;
@@ -53,7 +47,6 @@ i{
 
 .nav{
     float:right;
-    margin-top: 140px;
     margin-right: 200px;
 
 }
@@ -81,7 +74,7 @@ i{
 }
 .flip-card-inner {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100%;
     text-align: center;
     transition: transform 0.6s;
@@ -95,7 +88,7 @@ i{
 
 .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
     backface-visibility: hidden;
 }
@@ -115,16 +108,13 @@ i{
 .text-block {
     border: 1px solid white;
     padding: 30px;
-    width: 50%;
+    width: 100%;
     background-color:#bbb;
-    float: right;
-    margin-right: 50px;
-    letter-spacing: 2px;
 }
 .footer{
     background-color:#08387f;
     margin-top:90px;
-    height:400px;
+    height:auto;
 }
 .footer p{
     color:white;
