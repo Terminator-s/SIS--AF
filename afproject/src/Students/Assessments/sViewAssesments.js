@@ -7,6 +7,7 @@ import '../sStudent.css'
 import {Card, Table, Button} from 'react-bootstrap'
 import ReactDOM from "react-dom";
 import StudentUploadAssignment from "./sUploadAssesments";
+import Nav from '../../Navigator'
 
 
 class StudentViewAssignment extends Component {
@@ -17,6 +18,7 @@ class StudentViewAssignment extends Component {
         return (
             <div>
                 <HeaderMain/>
+                <Nav/>
                 <br/><br/>
                 <div className="StudentViewAssCard">
                     <Card className="text-center">
