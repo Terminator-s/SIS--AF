@@ -5,6 +5,7 @@ import HeaderMain from '../../Header'
 import Footer from '../../Footer'
 import '../sStudent.css'
 import {Card, Button} from 'react-bootstrap'
+import Nav from '../../Navigator'
 
 
 class StudentViewAssignment extends Component {
@@ -70,6 +71,7 @@ class StudentViewAssignment extends Component {
         return (
             <div>
                 <HeaderMain/>
+                <Nav/>
                 <br/><br/>
                 <div className="StudentViewAssCard">
                     <Card className="text-center">

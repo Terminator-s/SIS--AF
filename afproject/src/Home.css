@@ -120,3 +120,29 @@ i{
     color:white;
     font-size: 20px;
 }
+
+.loginCard{
+    width: auto;
+    height: auto;
+    margin-bottom: -90px;
+}
+
+.loginForm{
+    width: 400px;
+    height: auto;
+    margin-left: 350px;
+}
+
+.registerForm{
+    width: 400px;
+    height: auto;
+    margin-left: 320px;
+}
+
+.loginButton{
+    margin-left: 170px;
+}
+
+.registerButton{
+    margin-left: 155px;
+}
