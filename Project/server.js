@@ -31,7 +31,7 @@ app.get('/', function (req, res) {
     res.sendFile('./dist/index.html');
 });
 
-app.listen(3000, err => {
+app.listen('https://sis--af.azurewebsites.net/', err => {
     if (err) {
         console.error(err);
         return;

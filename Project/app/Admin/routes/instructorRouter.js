@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const instructorController = require('../controller/instructorController');
 
-router.get('/:code', (req, res) => {
+router.get('/get/:code', (req, res) => {
     instructorController.getByCode(req.params.code).then((instructors) => {
         res.status(instructors.status).send(instructors.instructors)
     }).catch(err => {
@@ -10,7 +10,7 @@ router.get('/:code', (req, res) => {
     })
 });
 
-router.get('/getAll', (req, res) => {
+router.get('/get/', (req, res) => {
     instructorController.getAll().then((instructors) => {
         res.status(instructors.status).send(instructors.instructors)
     }).catch(err => {
