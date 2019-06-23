@@ -14,13 +14,39 @@ import notice from '../resources/notice.png'
 import admin from '../resources/admin.png'
 import AdminViewCreate from "./admin/adminViewCreate";
 import StudentsViewCreate from "./students/studentsViewCreate";
-import InstructorViewCreate from "./instructors/instractorViewCreate"
+import ViewInstructor from "./instructors/instractorViewCreate"
 import CourseViewCreate from "./course/courseViewCreate"
 import NoticeViewCreate from "./notices/noticeViewCreate"
+import axios from "axios";
 
 
 
 class adminHome extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            instructor: []
+        };
+    }
+
+
+
+
+
+    // componentWillMount() {
+    //     axios.get('http://localhost:3000/instructor/')
+    //         .then(res => {
+    //                 this.setState({instructor: res.data},
+    //                     () => {
+    //                         console.log(this.state)
+    //                     }
+    //                 )
+    //             }
+    //         )
+    // }
+
+
+
     next = function(e){
         ReactDOM.render(<AdminViewCreate />, document.getElementById('root'));
     };
@@ -30,7 +56,7 @@ class adminHome extends Component {
     };
 
     nextI = function(e){
-        ReactDOM.render(<InstructorViewCreate />, document.getElementById('root'));
+        ReactDOM.render(<ViewInstructor instructor={this.state.instructor} />, document.getElementById('root'));
     };
 
     nextC = function(e){
@@ -42,6 +68,11 @@ class adminHome extends Component {
     };
 
     render() {
+        // const instructor = this.state.instructor.map((instructor)=>{
+        //     return(
+        //         <ViewInstructor key={instructor.code} item={instructor}/>
+        //     )
+        // });
         return (
             <div>
                 <HeaderMain/>

@@ -4,7 +4,6 @@ import {Form, Col} from 'react-bootstrap'
 import '../admin.css'
 import '../../Home.css'
 import '../../Slideshow.scss'
-import Nav from '../Navigator'
 import HeaderMain from '../../Header'
 import Footer from '../../Footer'
 import Nav from "../../Navigator";
